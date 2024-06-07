@@ -1,21 +1,20 @@
-/* styles.css */
 body {
-    background-color: #f0f8ff; /* Light blue background color */
+    background-color: #f0f8ff; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    text-align: center; /* Center-align all text in the body */
+    text-align: center; 
 
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: 1 fraction unit and 3 fraction units */
-    grid-template-rows: auto 1fr auto; /* Three rows: auto for header and footer, 1fr for the main content */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto 1fr auto;
+    gap: 20px; 
     min-height: 100vh;
 }
 
 h1, h2, h3 {
     color: #333;
-    font-family: 'Verdana', sans-serif; /* Change the font of all headings */
+    font-family: 'Verdana', sans-serif; 
 }
 
 p {
@@ -23,17 +22,17 @@ p {
 }
 
 ul, ol {
-    color: #0056b3; /* Change the color of the text in ordered and unordered lists */
+    color: #0056b3; 
     padding: 0;
-    display: inline-block; /* Center the list container */
-    text-align: left; /* Align text within the list container */
+    display: inline-block; 
+    text-align: left; 
 }
 
 
 a {
     color: #007BFF;
     text-decoration: none;
-    font-size: 18px; /* Change the font size of all links */
+    font-size: 18px; 
 }
 
 a:hover {
@@ -41,23 +40,23 @@ a:hover {
 }
 
 img {
-    width: 300px; /* Change the width of the image */
-    height: 300px; /* Change the height of the image */
-    border-radius: 50%; /* Make images round */
-    border: 5px solid #333; /* Add a border to the image */
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    border: 5px solid #333; 
     display: block;
-    margin: 20px auto; /* Center the images */
+    margin: 20px auto; 
 }
 
 header {
-    grid-column: 1 / -1; /* Span both columns */
+    grid-column: 1 / -1; 
     background-color: #f0f8ff;
     padding: 20px;
     text-align: center;
 }
 
 main {
-    grid-column: 1 / -1; /* Span both columns */
+    grid-column: 1 / -1; 
     background-color: #f0f8ff;
     padding: 20px;
     text-align: center;
@@ -66,14 +65,14 @@ main {
 
 
 footer {
-    grid-column: 1 / -1; /* Span both columns */    
+    grid-column: 1 / -1; 
     padding: 20px;
     text-align: center;
 }
 
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
-        grid-template-rows: auto auto auto auto; /* Adjust rows for single column */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
     }   
 }
